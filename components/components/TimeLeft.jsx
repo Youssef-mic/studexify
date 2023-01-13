@@ -31,6 +31,13 @@ function TimeLeft({ sessionLength, setCoins, breakLength }) {
               }, 1000);
               setIntervalID(newIntervalID);
         }
+        if (timeLeft == 0) {
+        if (currentSession == "Session") {
+            setCurrentSession("Break")
+        } else {
+            setCurrentSession("Session")
+        }
+    }
         
     }
     useEffect(() =>{
